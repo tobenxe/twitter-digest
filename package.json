@@ -11,7 +11,7 @@
   "author": "Tobe",
   "license": "ISC",
   "dependencies": {
-    "mailgun-js": "^0.22.0",
+    "@sendgrid/mail": "^7.0.0",
     "netlify-lambda": "^1.6.3",
     "node-fetch": "^2.6.0"
   }

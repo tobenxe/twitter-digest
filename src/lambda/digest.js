@@ -1,6 +1,6 @@
 
 const twitter = require('../utils/twitter');
-const mailgun = require('../utils/mailgun');
+const sendGrid = require('../utils/sendgrid');
 
 exports.handler = async (event, context)=>{
          try{
@@ -13,7 +13,7 @@ exports.handler = async (event, context)=>{
              //get tweets
              const tweets = await twitter();
              //send email
-             await mailgun(tweets)
+             await sendGrid(tweets)
              // success
              return {statusCode: 200}
              
