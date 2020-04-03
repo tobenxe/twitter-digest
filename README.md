@@ -1,8 +1,8 @@
-# Tweet Digest ✉️
+# Twitter Digest ✉️
 ---
 A netlify lambda function to send you email digests of twitter lists.
 
-I decided to create tweet digest to help me spend less time on social media. Particulary during the COVID-19 global pandemic. 
+I decided to create twitter digest to help me spend less time on social media. Particulary during the COVID-19 global pandemic. 
 
 It is completely free to run.
 
@@ -14,7 +14,7 @@ Code Tutorial: [insert blog post here]
 
 - A netlify account
 - A sendgrid account + API key
-- A twitter developer account + API key
+- A twitter developer account + API key & secret
 - An easycron account (or whatever cron service you like really)
 - An email [o_o]
 
