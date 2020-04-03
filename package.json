@@ -13,6 +13,6 @@
   "dependencies": {
     "@sendgrid/mail": "^7.0.0",
     "netlify-lambda": "^1.6.3",
-    "node-fetch": "^2.6.0"
+    "twitter-lite": "^0.9.4"
   }
 }

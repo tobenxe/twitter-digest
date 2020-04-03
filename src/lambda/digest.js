@@ -12,8 +12,8 @@ exports.handler = async (event, context)=>{
              if(!event.headers.authorization !== process.env.AUTH_KEY)  return {statusCode: 404}
              //get tweets
              const tweets = await twitter();
-             //send email
-             await sendGrid(tweets)
+             //send email if there are tweets available
+             if(tweets.length > 0) await sendGrid(tweets);
              // success
              return {statusCode: 200}
              
