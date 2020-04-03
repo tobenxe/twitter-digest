@@ -15,11 +15,13 @@ module.exports = async () => { //TODO - Test error handling in this function
     const data = await app.get('lists/statuses', {
                                 list_id: '1245290837988315136',
                                 include_rts: false,
+                                tweet_mode: 'extended'
                             })
     console.log({data})
     //extract the values needed
     const tweets = data.map(tweet=>{
-        return {text: tweet.text, user:tweet.user.screen_name, url: tweet.entities.urls[0].url}
+        console.log({entitiesObj:  tweet.entities.urls[0]})
+        return {text: tweet.text, user:tweet.user.screen_name, url: tweet.entities.urls[0]}
     })
     console.log({tweets})
     return tweets;
