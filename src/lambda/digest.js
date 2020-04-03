@@ -4,7 +4,6 @@ const sendGrid = require('../utils/sendgrid');
 
 exports.handler = async (event, context)=>{
          try{
-             console.log(event.httpMethod, event.headers)
              //Validate the request method and the authorization header
              if(event.httpMethod != 'POST') return {statusCode: 404}
              //404 code for no reveal(401 works too but reveals that the endpoint exists, our cron job will 

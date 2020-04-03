@@ -1,7 +1,6 @@
 const Twitter = require('twitter-lite')
 //should return a promise
 module.exports = async () => { //TODO - Test error handling in this function
-    console.log('getting list tweets')
     
     const user = new Twitter({
       consumer_key: process.env.TWITTER_KEY,
@@ -17,7 +16,6 @@ module.exports = async () => { //TODO - Test error handling in this function
                                 include_rts: false,
                                 tweet_mode: 'extended'
                             })
-    console.log({data})
     //extract the values needed
     const tweets = data.map(tweet=>{
         const fullText  = tweet.full_text;
@@ -28,7 +26,6 @@ module.exports = async () => { //TODO - Test error handling in this function
             url: fullText.slice(linkIndex)
         }
     })
-    console.log({tweets})
     return tweets;
      
 }
