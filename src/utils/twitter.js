@@ -19,7 +19,7 @@ module.exports = async () => { //TODO - Test error handling in this function
     console.log({data})
     //extract the values needed
     const tweets = data.map(tweet=>{
-        return {text: tweet.text, user:tweet.user.screen_name, url: tweet.entities.urls[0]}
+        return {text: tweet.text, user:tweet.user.screen_name, url: tweet.entities.urls[0].url}
     })
     console.log({tweets})
     return tweets;
