@@ -12,7 +12,7 @@ module.exports = async () => { //TODO - Test error handling in this function
       bearer_token: response.access_token
     });
     //get tweets from list
-    const data = await app.get('lists/statuses.json', {
+    const data = await app.get('lists/statuses', {
                                 list_id: '1245290837988315136',
                                 include_rts: false,
                             })
