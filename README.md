@@ -15,7 +15,7 @@ Code Tutorial: [insert blog post here]
 - A netlify account
 - A sendgrid account + API key
 - A twitter developer account + API key & secret
-- An easycron account (or whatever cron service you like really)
+- Some cron service to schedule the email. (https://cron-job.org/, https://easycron.com are some options if you don't have something already)
 - An email [o_o]
 
 
