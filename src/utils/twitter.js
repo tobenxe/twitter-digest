@@ -20,8 +20,13 @@ module.exports = async () => { //TODO - Test error handling in this function
     console.log({data})
     //extract the values needed
     const tweets = data.map(tweet=>{
-        console.log({entitiesObj:  tweet.entities.urls[0]})
-        return {text: tweet.text, user:tweet.user.screen_name, url: tweet.entities.urls[0]}
+        const fullText  = tweet.full_text;
+        const linkIndex = fullText.lastIndexOf('https://');
+        return {
+            text: fullText.slice(0,linkIndex), 
+            user:tweet.user.screen_name, 
+            url: fullText.slice(linkIndex)
+        }
     })
     console.log({tweets})
     return tweets;
