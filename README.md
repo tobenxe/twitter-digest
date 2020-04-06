@@ -1,5 +1,5 @@
 
-<h1 style="text-align: center;">Twitter Digest ✉️</h1>
+<h1 align="center">Twitter Digest ✉️</h1>
 <p align="center">
   <img width="460" height="320" src="https://i.imgur.com/Px4vvMY.gif" alt="twitter email digest gif">
 </p>
@@ -12,7 +12,7 @@ It is completely free to run.
 
 
 Project link/docs: [insert project link when done]
-Code Tutorial: https://toberej.com/building-a-netlify-lambda-function-to-turn-twitter-lists-into-email-digests/]
+Code Tutorial: https://toberej.com/building-a-netlify-lambda-function-to-turn-twitter-lists-into-email-digests/
 
 ## Requirements 
 
