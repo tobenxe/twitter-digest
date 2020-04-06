@@ -22,7 +22,7 @@ Code Tutorial: https://toberej.com/building-a-netlify-lambda-function-to-turn-tw
 - An email [o_o]
 
 ## Usage
-###Deploy to Netlify 
+### Deploy to Netlify 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/toberej/twitter-digest"> <img src="https://www.netlify.com/img/deploy/button.svg"/> </a>
 
 ### Fill in environment variables:
