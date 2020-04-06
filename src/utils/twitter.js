@@ -13,22 +13,17 @@ module.exports = async () => { //TODO - Test error handling in this function
     //get tweets from list
     const data = await app.get('lists/statuses', {
                                 list_id: process.env.TWITTER_LIST_ID,
-                                // include_rts: false,
                                 tweet_mode: 'extended'
                             })
-    console.log(data)
     //extract the values needed
     const tweets = data.map(tweet=>{
-        const fullText  = tweet.full_text;
-        const linkIndex = fullText.lastIndexOf('https://');
-        console.log(fullText, linkIndex)
         return {
-            text: fullText.slice(0,linkIndex), 
-            user:tweet.user.screen_name, 
-            url: fullText.slice(linkIndex)
+            text: tweet.full_text, 
+            user:tweet.user.screen_name,
+            url: `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`
         }
     })
-    console.log(tweets)
+
     return tweets;
      
 }

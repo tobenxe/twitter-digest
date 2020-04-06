@@ -17,6 +17,6 @@ module.exports = (tweets) => {
         </div>
     
     `;
-    console.log(email)
+ 
     return email;
 }
