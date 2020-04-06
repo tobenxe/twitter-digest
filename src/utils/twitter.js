@@ -20,12 +20,14 @@ module.exports = async () => { //TODO - Test error handling in this function
     const tweets = data.map(tweet=>{
         const fullText  = tweet.full_text;
         const linkIndex = fullText.lastIndexOf('https://');
+        console.log(fullText, linkIndex)
         return {
             text: fullText.slice(0,linkIndex), 
             user:tweet.user.screen_name, 
             url: fullText.slice(linkIndex)
         }
     })
+    console.log(tweets)
     return tweets;
      
 }
