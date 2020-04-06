@@ -12,7 +12,7 @@ module.exports = async () => { //TODO - Test error handling in this function
     });
     //get tweets from list
     const data = await app.get('lists/statuses', {
-                                list_id: '1245290837988315136',
+                                list_id: process.env.TWITTER_LIST_ID,
                                 include_rts: false,
                                 tweet_mode: 'extended'
                             })
