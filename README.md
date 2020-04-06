@@ -1,7 +1,11 @@
-# Twitter Digest ✉️
----
+
+<h1 style="text-align: center;">Twitter Digest ✉️</h1>
+<p align="center">
+  <img width="460" height="320" src="https://i.imgur.com/Px4vvMY.gif" alt="twitter email digest gif">
+</p>
+
 A netlify lambda function to send you email digests of twitter lists.
-![Tweet digest gif](https://i.imgur.com/Px4vvMY.gif)
+
 I decided to create twitter digest to help me spend less time on social media. Particulary during the COVID-19 global pandemic. 
 
 It is completely free to run.
