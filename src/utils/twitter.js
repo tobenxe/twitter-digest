@@ -13,9 +13,10 @@ module.exports = async () => { //TODO - Test error handling in this function
     //get tweets from list
     const data = await app.get('lists/statuses', {
                                 list_id: process.env.TWITTER_LIST_ID,
-                                include_rts: false,
+                                // include_rts: false,
                                 tweet_mode: 'extended'
                             })
+    console.log(data)
     //extract the values needed
     const tweets = data.map(tweet=>{
         const fullText  = tweet.full_text;
