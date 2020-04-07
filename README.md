@@ -82,7 +82,7 @@ If you are using some other method (maybe your own server/machine) to schedule t
 ## Local Development
 
 Create a .env file in the root of the directory to store the environment variables.
-Create a webpack.functions.js like the one [here] (https://github.com/netlify/netlify-lambda/issues/118)
+Create a webpack.functions.js like the one [here](https://github.com/netlify/netlify-lambda/issues/118)
 Run the following commands 
 ```
 npm install
