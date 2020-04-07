@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start:lambda": "netlify-lambda serve --config ./webpack.functions.js",
     "build:lambda": "netlify-lambda build src/lambda"
   },
   "keywords": [],
@@ -15,5 +16,8 @@
     "encoding": "^0.1.12",
     "netlify-lambda": "^1.6.3",
     "twitter-lite": "^0.9.4"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^1.7.0"
   }
 }
