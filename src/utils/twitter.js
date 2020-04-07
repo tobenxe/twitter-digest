@@ -1,6 +1,5 @@
 const Twitter = require('twitter-lite')
-//should return a promise
-module.exports = async () => { //TODO - Test error handling in this function
+module.exports = async () => { 
     
     const user = new Twitter({
       consumer_key: process.env.TWITTER_KEY,
