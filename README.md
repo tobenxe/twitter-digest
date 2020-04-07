@@ -75,14 +75,15 @@ Your API key from sendgrid. You can find a tutorial on how to get this [here](ht
 
 ### 3) Schedule request to the function
 
-You can use any cron job service that allows HTTP basic authentication (most of them do). In the [tutorial]() I used https://cron-job.org. You should specify a user and a password (should be the same as AUTH_USER and AUTH_PASS) to enable HTTP basic auth.
+You can use any cron job service that allows HTTP basic authentication (most of them do). In the [tutorial](https://toberej.com/building-a-netlify-lambda-function-to-turn-twitter-lists-into-email-digests/) I used https://cron-job.org. You should specify a user and a password (should be the same as AUTH_USER and AUTH_PASS) to enable HTTP basic auth.
 
-If you are using some other method (maybe your own server/machine) to schedule the request, you need to set the Authorization header (remember to encode your 'username:password' string after 'Basic ' to base64!).
+If you are using some other method (maybe your own server/machine) to schedule the request, you need to set the Authorization header (remember to encode your 'user:password' string after 'Basic ' to base64!).
 
 ## Local Development
 
-Create a .env file in the root of the directory to store the environment variables then run the following in the command line:
-
+Create a .env file in the root of the directory to store the environment variables.
+Create a webpack.functions.js like the one [here] (https://github.com/netlify/netlify-lambda/issues/118)
+Run the following commands 
 ```
 npm install
 npm run start:lambda //to test locally
