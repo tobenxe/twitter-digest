@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "Tobe",
-  "license": "ISC",
+  "license": "GPLV2",
   "dependencies": {
     "@sendgrid/mail": "^7.0.0",
     "encoding": "^0.1.12",
