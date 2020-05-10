@@ -90,5 +90,6 @@ npm run start:lambda //to test locally
 ```
 
 ## Possible Todos/Ideas (contribution ideas):
-- Add a since_id prop to the twitter API call in order to avoid getting duplicate tweets (would need some persistence of the id for the last fetched tweet, preferably free)
-- Make the html email look nicer ? (looks simple enough already but maybe it could look better)
+- Add a since_id prop to the twitter API call in order to avoid getting duplicate tweets (would need some persistence of the id for the last fetched tweet, preferably free).
+- Make the html email look nicer ? (looks simple enough already but maybe it could look better).
+- Swap out sendgrid API for just smtp with nodemailer (or an alternative).
