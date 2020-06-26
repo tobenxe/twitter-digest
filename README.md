@@ -11,7 +11,7 @@ I decided to create twitter digest to help me spend less time on social media. P
 It is completely free to run.
 
 
-Code Tutorial: https://toberej.com/building-a-netlify-lambda-function-to-turn-twitter-lists-into-email-digests/
+Code Tutorial: https://tobenxe.com/building-a-netlify-lambda-function-to-turn-twitter-lists-into-email-digests/
 
 ## Requirements 
 
@@ -23,7 +23,7 @@ Code Tutorial: https://toberej.com/building-a-netlify-lambda-function-to-turn-tw
 
 ## Usage
 ### 1) Deploy to Netlify 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/toberej/twitter-digest"> <img src="https://www.netlify.com/img/deploy/button.svg"/> </a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/tobenxe/twitter-digest"> <img src="https://www.netlify.com/img/deploy/button.svg"/> </a>
 
 ### 2) Fill in environment variables:
 During the initial site setup at step 3 you should be able to set environment variables by clicking "show advanced" > "new variable". 
@@ -75,7 +75,7 @@ Your API key from sendgrid. You can find a tutorial on how to get this [here](ht
 
 ### 3) Schedule request to the function
 
-You can use any cron job service that allows HTTP basic authentication (most of them do). In the [tutorial](https://toberej.com/building-a-netlify-lambda-function-to-turn-twitter-lists-into-email-digests/) I used https://cron-job.org. You should specify a user and a password (should be the same as AUTH_USER and AUTH_PASS) to enable HTTP basic auth.
+You can use any cron job service that allows HTTP basic authentication (most of them do). In the [tutorial](https://tobenxe.com/building-a-netlify-lambda-function-to-turn-twitter-lists-into-email-digests/) I used https://cron-job.org. You should specify a user and a password (should be the same as AUTH_USER and AUTH_PASS) to enable HTTP basic auth.
 
 If you are using some other method (maybe your own server/machine) to schedule the request, you need to set the Authorization header (remember to encode your 'user:password' string after 'Basic ' to base64!).
 
